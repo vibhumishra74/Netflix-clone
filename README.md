@@ -2,6 +2,8 @@
 
 https://netflixclone-87fc9.web.app/
 
+# if not open at once please check your network or connect with different wifi.
+
 # Getting Started with clone repo
 
 git clone https://github.com/vibhumishra74/Netflix-clone.git
