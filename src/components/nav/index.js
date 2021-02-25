@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router";
 import "./nav.css";
 
 function Index() {
+  const history = useHistory();
   const [show, handleshow] = useState(false);
   const transitiobnavbar = () => {
     if (window.scrollY > 100) {
@@ -27,6 +29,7 @@ function Index() {
         />
 
         <img
+          onClick={() => history.push("/profile")}
           className="nav__avatar"
           src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
           alt="avatar logo"

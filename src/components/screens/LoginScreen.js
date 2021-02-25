@@ -20,6 +20,7 @@ function LoginScreen() {
         <div className="loginscreen__gradient" />
       </div>
       <div className="loginscreen__body">
+        {/* randering signup/signin component on state change */}
         {sigin ? (
           <Signupscreen />
         ) : (
