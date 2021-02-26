@@ -26,11 +26,11 @@ function App() {
         );
       } else {
         //logout check
-        dispatch(logout);
+        dispatch(logout());
       }
     });
     return current_user;
-  }, []);
+  }, [dispatch]);
   return (
     <div className="app">
       <BrowserRouter>
