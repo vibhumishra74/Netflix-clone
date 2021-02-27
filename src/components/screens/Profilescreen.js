@@ -4,6 +4,7 @@ import Nav from "../nav";
 import { auth } from "../firebase";
 import { selectuser } from "../../features/userslice";
 import "./profilescreen.css";
+import Planescreen from "./Planescreen";
 function Profilescreen() {
   const user = useSelector(selectuser);
   return (
@@ -20,6 +21,7 @@ function Profilescreen() {
             <h2>{user.email} </h2>
             <div className="profilescreen__plans">
               <h3>Plans</h3>
+              <Planescreen />
               <button
                 onClick={() => auth.signOut()}
                 className="profilescreen__signout"
